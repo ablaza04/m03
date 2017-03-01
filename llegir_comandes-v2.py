@@ -79,7 +79,9 @@ while sortir == False:
 				
 					tecla = raw_input('Clique una tecla para continuar')
 				
-				elif nombretabla == "clientes":
+				else :
+					
+					if nombretabla == "clientes":
 					
 					print "NUM_CLIE         EMPRESA         REP_CLIE  LIMITE_CREDITO "
 
