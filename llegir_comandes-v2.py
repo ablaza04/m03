@@ -83,13 +83,13 @@ while sortir == False:
 					
 					if nombretabla == "clientes":
 					
-					print "NUM_CLIE         EMPRESA         REP_CLIE  LIMITE_CREDITO "
+						print "NUM_CLIE         EMPRESA         REP_CLIE  LIMITE_CREDITO "
 
-					for row in rows:
-						#print row[0],row[1],row[2],row[3]
-						print(" {:^10} {:^20} {:^10} {:^10} ".format(row[0], row[1], row[2], row[3]))
-				
-					tecla = raw_input('Clique una tecla para continuar')
+						for row in rows:
+							#print row[0],row[1],row[2],row[3]
+							print(" {:^10} {:^20} {:^10} {:^10} ".format(row[0], row[1], row[2], row[3]))
+					
+						tecla = raw_input('Clique una tecla para continuar')
 					
 		except psycopg2.Error as er :
 			print "-------- ERROR:", er.pgcode, " -------- \n"
