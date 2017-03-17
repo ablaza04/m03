@@ -9,30 +9,30 @@ print "2) Restar"
 print "3) Multiplicar"
 print "4) Dividir"
 
-numero3 = raw_input ("Elija una opción ")
+opcion = raw_input ("Elija una opción ")
 
-numero =int(raw_input ("Primer numero "))
+numero1 =int(raw_input ("Primer numero "))
 numero2 =int(raw_input ("Segundo numero "))
 
 
 
-if numero3 == "1":
-	suma = numero + numero2
+if opcion == "1":
+	suma = numero1 + numero2
 	print "El resultado es ", suma
 
-elif numero3 == "2":
-	resta = numero - numero2
+elif opcion == "2":
+	resta = numero1 - numero2
 	print "El resultado es", resta
 
-elif numero3 == "3":
-	multiplicar = numero * numero2
+elif opcion == "3":
+	multiplicar = numero1 * numero2
 	print "El resultado es", multiplicar
 
-elif numero3 == "4":
-	dividir = numero / numero2
+elif opcion == "4":
+	dividir = numero1 / numero2
 	print "El resultado es", dividir
 
-elif numero3 == "0":
+elif opcion == "0":
 	print "Hasta Luego!"
 		
 else: 
