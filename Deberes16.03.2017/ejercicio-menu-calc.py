@@ -2,18 +2,19 @@
 
 #Menu de una Calculadora
 
-
-numero =int(raw_input ("Primer numero "))
-numero2 =int(raw_input ("Segundo numero "))
-
 print "Qué desea hacer el amo? "
+print "0) Salir"
 print "1) Sumar"
 print "2) Restar"
 print "3) Multiplicar"
 print "4) Dividir"
-print "5) Salir"
 
 numero3 = raw_input ("Elija una opción ")
+
+numero =int(raw_input ("Primer numero "))
+numero2 =int(raw_input ("Segundo numero "))
+
+
 
 if numero3 == "1":
 	suma = numero + numero2
@@ -31,9 +32,8 @@ elif numero3 == "4":
 	dividir = numero / numero2
 	print "El resultado es", dividir
 
-elif numero3 == "5":
+elif numero3 == "0":
 	print "Hasta Luego!"
 		
 else: 
-	print "ERROR : Esa Opción no existe !!!"
-	
+	print "ERROR : Esa Opción no existe !!! "
