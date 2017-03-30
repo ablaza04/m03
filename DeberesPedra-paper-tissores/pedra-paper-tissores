@@ -1,0 +1,14 @@
+# coding: utf8
+
+jugador1 = raw_input ("jugador1 elige: piedra, papel o tijeras:\n")
+jugador2 = raw_input ("jugador2 elige: piedra, papel o tijeras:\n")
+
+
+
+if (jugador1 == jugador2) or (jugador2 == jugador1):
+	print "empate"
+
+if (jugador1 > jugador2):
+	print "gana jugador1"
+if (jugador2 > jugador1):
+	print "gana jugador2"
