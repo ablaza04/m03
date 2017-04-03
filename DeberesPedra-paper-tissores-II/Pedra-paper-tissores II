@@ -1,0 +1,38 @@
+# coding: utf8
+
+jugador1 = 31
+jugador2 = 31
+salir = False
+while (salir == False):
+	
+	if (jugador1 %7 == 0) or (jugador1 %7 == 1):
+		print "Tijeras"
+	if (jugador1 %7 == 2) or (jugador1 %7 == 3):
+		print "Piedra"
+	if (jugador1 %7 == 4) or (jugador1 %7 == 5):	
+		print "Papel"
+	if (jugador1 %7 == 6):
+		print "Piedra"
+	
+	if (jugador2 %5 == 0) or (jugador2 %5 == 1) or  (jugador2 %5 == 2): 
+		print "Papel"
+	if (jugador2 %5 == 3):
+		print "Tijeras"
+	if (jugador2 %5 == 4):
+		print "Piedra"
+	
+	if jugador1 > jugador2:
+		print "Gana jugador1"
+	if jugador2 > jugador1:
+		print "Gana jugador2"	
+	if (jugador1 == jugador2):
+		print "Empate"
+
+	if (jugador1 == 57) and (jugador2 == 57):
+		salir = True
+		
+	jugador1 = jugador1+1
+	jugador2 = jugador2+1
+	
+		
+	
