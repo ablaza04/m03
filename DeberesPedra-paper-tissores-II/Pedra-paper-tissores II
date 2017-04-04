@@ -21,10 +21,7 @@ while (salir == False):
 	if (jugador2 %5 == 4):
 		print "Piedra"
 	
-	if jugador1 > jugador2:
-		print "Gana jugador1"
-	if jugador2 > jugador1:
-		print "Gana jugador2"	
+	
 	if (jugador1 == jugador2):
 		print "Empate"
 
