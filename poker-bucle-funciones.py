@@ -4,10 +4,13 @@
 
 from random import randint
 
+
 saldo=100
 apuesta=0
 salir=False
 salir_apuesta=False	
+
+
 	
 if (saldo < 10):
 	salir_apuesta = True
@@ -19,36 +22,34 @@ else:
 	print "Salir: -1"
 	apuesta=input("Introduzca su apuesta: ")
 		
-while (salir_apuesta == False):
-	salir = True	
+while (salir_apuesta == False):	
 	if (apuesta==-1):
 			salir_apuesta=True
 			salir=True
 	else:
 		if (apuesta>=10 and apuesta<=saldo):
-			saldo=saldo-apuesta
+			saldo= saldo - apuesta
 			salir_apuesta=True
 			
 		else:
-				print "Apuesta Incorrecta"
-				if (apuesta<10):
-					print "La apuesta Mínima es de 10€ chaval!"
-				if (apuesta>saldo):
-					print "No puede apostar más de su saldo"
-				print "Salir: -1"
-				apuesta=input("Introduca su apuesta: ")	
+			print "Apuesta Incorrecta"
+			if (apuesta<10):
+				print "La apuesta Mínima es de 10€ chaval!"
+			if (apuesta>saldo):
+				print "No puede apostar más de su saldo"
+			print "Salir: -1"
+			apuesta=input("Introduzca su apuesta: ")	
 
-saldo=100
-apuesta=0
-salir=False
-j1num=randint(2,14)
-j1palo=randint(1,4)
-j2num=randint(2,14)
-j2palo=randint(1,4)
+
 							
 while (salir==False):
 				
 	# Banca carta aleatoria
+	j1num=randint(2,14)
+	j1palo=randint(1,4)
+	j2num=randint(2,14)
+	j2palo=randint(1,4)	
+	
 	numero=j1num
 	if (j1num==11):
 		numero="J"
@@ -97,7 +98,7 @@ while (salir==False):
 
 	
 
-		# Empate
+	# Empate
 	if (j1num == j2num):
 		print "Gana Banca Siempre!"	
 		
@@ -105,20 +106,50 @@ while (salir==False):
 		#Gana jugador
 		if (j2num>j1num):
 			print "Has Ganado eres un Crack!"
-			saldo=saldo+(apuesta*2)
+			saldo = saldo + (apuesta*2)
 		else:
 			print "Perdedor, Manco!!!"
 	
 	print "Estado de su Saldo actual:" , saldo
-	salir = True		
 
-	# Ni gana ni pierde
-	if (saldo==100):
-		print "\nGracias por venir"
-	else:
+
+
+	salir_apuesta=False	
 		
-		if (saldo<100):
-			print "\nPringao, Gracias a Ti me forro"
+	if (saldo < 10):
+		salir_apuesta = True
+		salir = True 
+	else:
+		salir_apuesta=False
+		print "Estado de su Saldo actual:" , saldo
+		print "Apuesta mínima 10€"
+		print "Salir: -1"
+		apuesta=input("Introduzca su apuesta: ")
+			
+	while (salir_apuesta == False):	
+		if (apuesta==-1):
+				salir_apuesta=True
+				salir=True
 		else:
-			print "\nMe he quedado con tu cara, no vuelvas"	
+			if (apuesta>=10 and apuesta<=saldo):
+				saldo= saldo - apuesta
+				salir_apuesta=True
+				
+			else:
+				print "Apuesta Incorrecta"
+				if (apuesta<10):
+					print "La apuesta Mínima es de 10€ chaval!"
+				if (apuesta>saldo):
+					print "No puede apostar más de su saldo"
+				print "Salir: -1"
+				apuesta=input("Introduzca su apuesta: ")		
+
+# Ni gana ni pierde
+if (saldo==100):
+	print "\nGracias por venir"
+else:
 	
+	if (saldo<100):
+		print "\nPringao, Gracias a Ti me forro"
+	else:
+		print "\nMe he quedado con tu cara, no vuelvas"	
