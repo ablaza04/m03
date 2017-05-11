@@ -1,0 +1,73 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-family: Liberation serif;
+    font-size: 20px;
+}
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: yes;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+img {
+    border-radius: 25%;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+   
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: center;
+}
+
+
+
+div.cities {
+    background-color: darkgrey;
+    color: darkblue;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+
+
+
