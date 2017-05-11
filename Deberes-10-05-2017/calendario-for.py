@@ -6,7 +6,7 @@ def myrange (inici, fi, augment):
 
     while inici <= fi:
 
-        yield inici
+	yield inici
 
 	inici = inici + augment
 
@@ -29,4 +29,16 @@ for fil in myrange (1,6,1):
 				print "Sab",
 			elif (col == 7):
 				print "Dom",
+			
+				
+			else:
+				if (fil == 1 and col == 7):
+					print "1",
+					print "",
+				
+				
+	print ""
+					
+					
+					
 				
