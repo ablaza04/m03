@@ -1,6 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+
+import calendar
+
+mes= input ("Introduzca el mes que desea el amo: ")
+anyo= 2017
+
+cont=1
+
+num_dia_mes= calendar.monthrange(anyo,mes)[1]
+dia_semana=(calendar.weekday(anyo,mes,1))+1
+
 # myrange
 def myrange (inici, fi, augment):
 
@@ -30,15 +41,19 @@ for fil in myrange (1,6,1):
 			elif (col == 7):
 				print "Dom",
 			
-				
+		elif (fil==2):
+			if (dia_semana <= col):
+				print cont,
+				cont = cont+1
 			else:
-				if (fil == 1 and col == 7):
-					print "1",
-					print "",
-				
-				
-	print ""
-					
+				print " ",
+			
+		elif (cont <= num_dia_mes):
+			print cont,
+			cont =cont+1
+		else:
+			print "",
+	print " "
 					
 					
 				
