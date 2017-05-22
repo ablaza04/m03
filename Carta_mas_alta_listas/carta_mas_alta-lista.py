@@ -7,8 +7,19 @@ from random import randint
 
 salir= False
 
-numero= ["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+numero= ["A","2","3","4","5","6","7","8","9","10"]
 palos= ["Diamante","Corazon","Trebol","Pica"]
+
+
+numero.remove("A")
+
+
+numero.append ("A")
+numero.append ("J")
+numero.append ("Q")
+numero.append ("K")
+
+
 
 while (salir == False):
 		
