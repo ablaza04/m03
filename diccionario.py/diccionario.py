@@ -6,7 +6,6 @@ import os
 os.system ("clear")
 
 jugadores={ 1 :"Michael Jordan", 2 :"Kobe Bryant", 3 :"Westbrook", 4 :"Lebron James"}
-nba = jugadores.keys()
 
 print jugadores
 
@@ -21,9 +20,6 @@ jugadores[2] = "Stephen Curry"
 print jugadores
 
 print "----------------------------------------------------------------------------"
-
-altura= jugadores.values()
-
 
 jugadores_altura={ 1 :"1,91", 2 :"1,91", 3 :"1,91", 4 :"2,03"}
 
